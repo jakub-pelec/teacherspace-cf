@@ -9,13 +9,13 @@ export default async (
 	response: express.Response
 ): Promise<express.Response> => {
 	const {
-		body: {email, password, firstName, lastName},
+		body: {email, password, firstName, lastName, subjects, classes},
 	} = request;
 	try {
 		const {id: firestoreID} = await admin
 			.firestore()
 			.collection(COLLECTIONS.USERS)
-			.add({firstName, lastName, email});
+			.add({firstName, lastName, email, subjects, classes});
 		const {uid: authID} = await admin.auth().createUser({
 			email,
 			password,
