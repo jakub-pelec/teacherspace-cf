@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "teacherspace-dev"
-  }
+    "dev": "teacherspace-dev",
+    "prod": "teacherspace-57d5c"
+  },
+  "targets": {}
 }
