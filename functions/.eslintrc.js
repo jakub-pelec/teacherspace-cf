@@ -32,5 +32,10 @@ module.exports = {
 		'eol-last': 0,
 		semi: 0,
 		'max-len': 0,
+		'@typescript-eslint/ban-ts-comment': 0,
+		camelcase: 0,
+		'@typescript-eslint/no-unused-vars': 0,
+		'require-jsdoc': 0,
+		'operator-linebreak': 0,
 	},
 };
